@@ -27,8 +27,8 @@ spec:
           env:
             - name: "MY_DB_USER"
               value: "mysql_admin"
-            - name: "1nsecure"
-              value: "redhat12345"
+            - name: "MY_DB_PASS"
+              value: "1nsecure"
             - name: "MY_DB_NAME"
               value: "userdb"
             - name: "MY_DB_HOST"
