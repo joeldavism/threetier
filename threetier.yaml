@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: "mohanraz/backend"
+          image: "joeldavism/fedbackend"
           ports:
             - name: http
               containerPort: 80
@@ -26,8 +26,8 @@ spec:
               cpu: "0.25"
           env:
             - name: "MY_DB_USER"
-              value: "mysvcuser"
-            - name: "MY_DB_PASS"
+              value: "mysql_admin"
+            - name: "1nsecure"
               value: "redhat12345"
             - name: "MY_DB_NAME"
               value: "userdb"
@@ -76,7 +76,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: "mohanraz/frontend"
+        image: "joeldavism/fedfrontend"
         ports:
           - name: http
             containerPort: 80
